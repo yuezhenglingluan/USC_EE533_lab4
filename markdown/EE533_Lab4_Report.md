@@ -28,11 +28,6 @@
 
 ## 4. NetFPGA Environment
 
-```
-Your NetFPGA username, password would be
-team8 4z65jKjbw6c8
-```
-
 ![Screenshot 2025-02-08 184307](C:\Users\StepF\Documents\GitHub\ee533\lab 4\Pic\Screenshot 2025-02-08 184307.png)
 
 ## 5. NetFPGA-based Linux Kernel IP Router
