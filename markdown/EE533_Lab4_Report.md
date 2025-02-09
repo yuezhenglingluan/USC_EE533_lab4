@@ -227,6 +227,8 @@ Using small packets means that the router has to put more efferts in analysising
 
 ![Screenshot 2025-02-08 224943](<Pic\Screenshot 2025-02-08 224943.png>)
 
+We can see that the speed of the test did improve but did not reach a point that it uses all 4Gbps of bandwidth, so we don't think that its fair to say that the NetFPGA can route IP trafffic bi-directionally at line speed for a total of 4Gbps of cross-wise bandwidth
+
 ## Extra. GitHub Link
 
 * This Lab's update and commit history could be checked by the below link:
