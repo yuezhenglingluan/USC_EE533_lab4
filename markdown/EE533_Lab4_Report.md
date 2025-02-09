@@ -27,7 +27,7 @@
 ![Screenshot 2025-02-05 131605](<Pic\Screenshot 2025-02-05 131605.png>)
 
 ## 4. NetFPGA Environment
-echo test
+echo test results
 ![alt text](<Pic/image.png>)
 
 ## 5. NetFPGA-based Linux Kernel IP Router
@@ -161,7 +161,9 @@ echo test
 |   n3   |   n1   |   TCP    |          373          |
 |   n3   |   n2   |   TCP    |          359          |
 
+* Has the bandwidth changed? If so, why?
 
+we can see that the bandwith went up by a lot, and that we guess the reason could be that since the netfpga now already knows about the routes and configurations, it would make sending packages between each nodes much quicker since it doesn't have to sent the header to all the nodes and wait for the right nodes to response, hence the latency and bandwith could improve, and therefore the speed improvements
 
 ### 6.4 Re-Run the iperf with reference_nic.bit and check Bandwidth
 
@@ -202,7 +204,11 @@ echo test
 |   n3   |   n1   |   UDP    |         1.05          |
 |   n3   |   n2   |   UDP    |         1.05          |
 
-## 4. GitHub Link
+* Why does using small packets stress the system?
+
+Using small packets means that the router has to put more efferts in analysising each packet's header to decide where to sent them, and since every packet is very small in size, the total bandwidth would be limited by the amount of packet header the router could process every second.
+
+## Extra. GitHub Link
 
 * This Lab's update and commit history could be checked by the below link:
   * https://github.com/yuezhenglingluan/USC_EE533_lab4.git
